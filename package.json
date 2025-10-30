@@ -1,0 +1,27 @@
+{
+  "name": "kelinci",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "vite": "vite",
+    "vite:build": "vite build",
+    "sass": "sass",
+    "sass:dev": "sass styles/:out/ --watch",
+    "sass:build": "sass styles/:out/",
+    "release:minify": "pnpm dlx lightningcss-cli --minify --sourcemap dist/kelinci.css -o dist/kelinci.min.css",
+    "release:build": "pnpm run vite:build && pnpm run minify"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.1.14"
+    }
+  },
+  "dependencies": {
+    "@fontsource/maple-mono": "^5.2.6"
+  }
+}

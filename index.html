@@ -1,16 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="out/kelinci.css">
-    <title>kelinci</title>
-  </head>
-  <body>
-    <h1>kelinci</h1>
-    <p style="font-weight: 300;">This is a test page for the kelinci CSS library. Light font-weight!</p>
-    <p style="font-weight: 500;">This is a test page for the kelinci CSS library. Normal font-weight!</p>
-    <p style="font-weight: 700;">This is a test page for the kelinci CSS library. Bold font-weight!</p>
-    <p style="font-weight: 800;">This is a test page for the kelinci CSS library. Extra Bold font-weight!</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="out/usagi.css">
+  <title>usagi</title>
+</head>
+
+<body>
+  <h1>usagi</h1>
+  <p style="font-weight: 300;">This is a test page for the usagi CSS library. Light font-weight!</p>
+  <p style="font-weight: 500;">This is a test page for the usagi CSS library. Normal font-weight!</p>
+  <p style="font-weight: 700;">This is a test page for the usagi CSS library. Bold font-weight!</p>
+  <p style="font-weight: 800;">This is a test page for the usagi CSS library. Extra Bold font-weight!</p>
+  <div class="u-margin-xl">
+    <div class="window">
+      <header class="window__header">
+        <img class="window__icon" src="kelinci-icon-vector.png" alt="">
+        <span class="window__title">Run</span>
+
+        <div class="window__controls">
+          <button class="window__control" data-variant="close"></button>
+        </div>
+      </header>
+
+      <div class="window__body">
+        <section class="window__section" data-variant="info">
+          <img class="window__image" src="kelinci-icon-vector.png" alt="">
+          <p>Type the name of a program, folder, document, or Internet resource, and usagi will open it for you.</p>
+        </section>
+
+        <div class="window__field">
+          <label><u>O</u>pen:</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <footer class="window__footer">
+        <input type="button" value="Browse">
+        <input type="button" value="Cancel">
+        <input type="button" value="OK">
+      </footer>
+    </div>
+
+    <div class="window">
+      <header class="window__header">
+        <span class="window__title">Welcome</span>
+        <div class="window__controls">
+          <button class="window__control" data-variant="close"></button>
+        </div>
+      </header>
+
+      <div class="window__body">
+        <div class="window__section" data-variant="header">
+          Welcome to usagi!
+        </div>
+        <div class="window__section">
+          usagi is a CSS library for web pages, inspired by old operating systems.
+        </div>
+        <div class="window__section">
+          usagi means "rabbit" in Japanese. (\_/)
+        </div>
+        <div class="window__section">
+          View the source code at:
+        </div>
+      </div>
+
+      <footer class="window__footer">
+        <input type="button" value="OK">
+      </footer>
+    </div>
+
+    <div class="window">
+      <header class="window__header">
+        <span class="window__title">Tabbed interface example</span>
+        <div class="window__controls">
+          <button class="window__control" data-variant="minimize"></button>
+          <button class="window__control" data-variant="maximize"></button>
+          <button class="window__control" data-variant="restore"></button>
+          <button class="window__control" data-variant="close"></button>
+        </div>
+      </header>
+
+      <div class="window__body" data-variant="tabs" data-state="no-widgets">
+        <div class="tabbed-ui">
+          <div class="tabbed-ui__headers">
+            <label class="tabbed-ui__tab" for="tab-applications">Applications</label>
+            <label class="tabbed-ui__tab" for="tab-processes">Processes</label>
+            <label class="tabbed-ui__tab" for="tab-services">Services</label>
+            <label class="tabbed-ui__tab" for="tab-performance">Performance</label>
+            <label class="tabbed-ui__tab" for="tab-network">Network</label>
+            <label class="tabbed-ui__tab" for="tab-users">Users</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

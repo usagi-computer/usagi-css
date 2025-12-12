@@ -1,0 +1,43 @@
+@use "variables"
+
+// ---------------------------------------------------------
+// COMPONENT: Tabbed Interface
+// ---------------------------------------------------------
+.tabbed-ui
+  display: flex
+  flex-direction: column
+  height: 300px
+
+  &__headers
+    display: flex
+    padding: 0.4rem 0.4rem 0 0.4rem
+    border-bottom: 0.15em solid variables.$color-window-frame
+    background-color: variables.$color-gray-light
+    gap: 0.2rem
+    // Handle many tabs
+    overflow-x: auto
+
+  &__tab
+    padding: 0.4rem 0.8rem
+    border: 0.15em solid variables.$color-window-frame
+    border-bottom: none
+    border-radius: 0.4em 0.4em 0 0
+    background-color: silver
+    cursor: pointer
+    font-size: 0.9rem
+    position: relative
+    margin-top: 0.15em
+
+    &:hover
+      background-color: gainsboro
+
+  // Hide the actual radio buttons
+  input[type="radio"]
+    display: none
+
+  // Content Area
+  &__content
+    padding: 1.5rem
+    background-color: variables.$color-window-bg
+    flex-grow: 1
+    overflow-y: auto

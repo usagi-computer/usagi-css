@@ -1,0 +1,21 @@
+@use "variables"
+
+@mixin retro-box
+  border: 0.15em solid variables.$color-window-frame
+  background-color: variables.$color-window-bg
+  border-radius: 0.4em 0.4em 0 0
+  box-shadow: variables.$color-shadow 0.4em 0.4em 0 0.1em
+
+@mixin retro-button
+  cursor: pointer
+  border: 0.15em solid variables.$color-window-frame
+  background-color: variables.$color-gray-light
+  box-shadow: 0.15em 0.15em 0 0 variables.$color-shadow
+  font-family: inherit
+  font-weight: bold
+  padding: 0.3em 0.8em
+  border-radius: 0.9em
+
+  &:active
+    transform: translate(0.1em, 0.1em)
+    box-shadow: none

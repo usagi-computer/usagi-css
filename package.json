@@ -1,5 +1,5 @@
 {
-  "name": "kelinci",
+  "name": "usagi-css",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,19 +9,21 @@
     "sass": "sass",
     "sass:dev": "sass styles/:out/ --watch",
     "sass:build": "sass styles/:out/",
-    "release:minify": "pnpm dlx lightningcss-cli --minify --sourcemap dist/kelinci.css -o dist/kelinci.min.css",
+    "dev": "concurrently \"pnpm run sass:dev\" \"pnpm run vite\"",
+    "release:minify": "pnpm dlx lightningcss-cli --minify --sourcemap dist/usagi.css -o dist/usagi.min.css",
     "release:build": "pnpm run vite:build && pnpm run minify"
   },
   "devDependencies": {
-    "sass": "^1.93.2",
-    "vite": "npm:rolldown-vite@7.1.14"
+    "concurrently": "9.2.1",
+    "sass": "1.96.0",
+    "vite": "npm:rolldown-vite@7.1.20"
   },
   "pnpm": {
     "overrides": {
-      "vite": "npm:rolldown-vite@7.1.14"
+      "vite": "npm:rolldown-vite@7.2.7"
     }
   },
   "dependencies": {
-    "@fontsource/maple-mono": "^5.2.6"
+    "@fontsource/maple-mono": "5.2.6"
   }
 }

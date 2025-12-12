@@ -9,9 +9,9 @@ export default defineConfig({
     assetsInlineLimit: Infinity,
 
     lib: {
-      entry: 'styles/kelinci.sass',
+      entry: 'styles/usagi.sass',
       formats: ['es'],
-      name: 'kelinci',
+      name: 'usagi',
     }
   }
 });

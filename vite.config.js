@@ -12,6 +12,7 @@ export default defineConfig({
       entry: 'styles/usagi.sass',
       formats: ['es'],
       name: 'usagi',
+      fileName: 'usagi',
     }
   }
 });

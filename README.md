@@ -1,5 +1,5 @@
-# usagi
+# usagi.css
 
-usagi is a CSS library for web pages, It is inspired by old operating systems.
+usagi.css is a CSS library for web pages, it is inspired by old operating systems.
 
 `(\_/)`

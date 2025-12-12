@@ -1,7 +1,6 @@
 {
-  "name": "usagi-css",
-  "private": true,
-  "version": "0.0.0",
+  "name": "usagi.css",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "vite": "vite",

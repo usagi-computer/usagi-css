@@ -1,15 +1,14 @@
 {
   "name": "usagi.css",
-  "version": "0.1.2",
-  "files": [
-    "dist/usagi.css",
-    "dist/usagi.min.css",
-    "dist/usagi.min.css.map"
-  ],
+  "version": "0.1.3",
   "style": "./dist/usagi.css",
   "exports": {
     ".": "./dist/usagi.css",
     "./min": "./dist/usagi.min.css"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "linkDirectory": false
   },
   "type": "module",
   "scripts": {
@@ -21,7 +20,8 @@
     "dev": "concurrently \"pnpm run sass:dev\" \"pnpm run vite\"",
     "release:minify": "pnpm dlx lightningcss-cli --minify --sourcemap dist/usagi.css -o dist/usagi.min.css",
     "release:build": "pnpm run vite:build && pnpm run release:minify",
-    "prepublishOnly": "pnpm run release:build"
+    "release:prepare": "node scripts/prepare-publish.mjs",
+    "prepublishOnly": "pnpm run release:build && pnpm run release:prepare"
   },
   "devDependencies": {
     "concurrently": "9.2.1",

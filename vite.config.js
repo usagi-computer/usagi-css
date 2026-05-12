@@ -9,10 +9,11 @@ export default defineConfig({
     assetsInlineLimit: Infinity,
 
     lib: {
-      entry: 'styles/usagi.sass',
+      entry: 'index.js',
       formats: ['es'],
       name: 'usagi',
       fileName: 'usagi',
+      cssFileName: 'usagi',
     }
   }
 });
